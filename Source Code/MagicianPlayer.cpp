@@ -156,64 +156,64 @@ string MagicianPlayer::serialize()
 	return a;
 }
 
-NovicePlayer * MagicianPlayer::unserialize(string a)
-{
-	//cout << "MagicianPlayer::unserialize(string a)\n";
-	string namae;
-	int i = 2;//跳過角色代號
-	while (a[i] != ',')
-	{
-		namae.push_back(a[i]);
-		i++;
-	}
-	i++;
-	int lv = 0;
-	while (a[i] != ',')
-	{
-		lv = lv * 10 + (a[i] - 48);
-		i++;
-	}
-	i++;
-	int h = 0;
-	while (a[i] != ',')
-	{
-		h = h * 10 + (a[i] - 48);
-		i++;
-	}
-	i++;
-	int m = 0;
-	while (a[i] != ',')
-	{
-		m = m * 10 + (a[i] - 48);
-		i++;
-	}
-	i++;
-	int ex = 0;
-	while (a[i] != ',')
-	{
-		ex = ex * 10 + (a[i] - 48);
-		i++;
-	}
-	i++;
-	int mon = 0;
-	while (a[i] != ',')
-	{
-		mon = mon * 10 + (a[i] - 48);
-		i++;
-	}
-	//cout << lv << endl << h << endl << m << endl << ex << endl << mon;
-	NovicePlayer *p = new MagicianPlayer();
-	p->setName(namae);
-	p->setLevel(lv);
-	p->setHp(h);
-	p->setMp(m);
-	p->setExp(ex);
-	p->setMoney(mon); 
-	p->weapon = nullptr;
-	p->armor = nullptr;
-	for (int i = 0; i < lv; i++)
-	{
-		p->backpack[i] = nullptr;
-	}
-	return p;
-}
+//NovicePlayer * MagicianPlayer::unserialize(string a)
+//{
+//	//cout << "MagicianPlayer::unserialize(string a)\n";
+//	string namae;
+//	int i = 2;//跳過角色代號
+//	while (a[i] != ',')
+//	{
+//		namae.push_back(a[i]);
+//		i++;
+//	}
+//	i++;
+//	int lv = 0;
+//	while (a[i] != ',')
+//	{
+//		lv = lv * 10 + (a[i] - 48);
+//		i++;
+//	}
+//	i++;
+//	int h = 0;
+//	while (a[i] != ',')
+//	{
+//		h = h * 10 + (a[i] - 48);
+//		i++;
+//	}
+//	i++;
+//	int m = 0;
+//	while (a[i] != ',')
+//	{
+//		m = m * 10 + (a[i] - 48);
+//		i++;
+//	}
+//	i++;
+//	int ex = 0;
+//	while (a[i] != ',')
+//	{
+//		ex = ex * 10 + (a[i] - 48);
+//		i++;
+//	}
+//	i++;
+//	int mon = 0;
+//	while (a[i] != ',')
+//	{
+//		mon = mon * 10 + (a[i] - 48);
+//		i++;
+//	}
+//	//cout << lv << endl << h << endl << m << endl << ex << endl << mon;
+//	NovicePlayer *p = new MagicianPlayer();
+//	p->setName(namae);
+//	p->setLevel(lv);
+//	p->setHp(h);
+//	p->setMp(m);
+//	p->setExp(ex);
+//	p->setMoney(mon); 
+//	p->weapon = nullptr;
+//	p->armor = nullptr;
+//	for (int i = 0; i < lv; i++)
+//	{
+//		p->backpack[i] = nullptr;
+//	}
+//	return p;
+//}

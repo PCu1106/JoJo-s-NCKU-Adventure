@@ -11,6 +11,6 @@ public:
 	virtual void setLevel(int);
 	virtual void specialSkill();
 	virtual string serialize();
-	static NovicePlayer* unserialize(string);
+	//static NovicePlayer* unserialize(string);
 };
 #endif

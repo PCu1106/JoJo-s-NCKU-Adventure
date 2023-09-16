@@ -1,4 +1,5 @@
 #include "NovicePlayer.h"
+#include "PlayerFactory.h"
 #include<iostream>
 #include<string>
 #include<math.h>
@@ -329,6 +330,7 @@ string NovicePlayer::serialize()
 NovicePlayer * NovicePlayer::unserialize(string a)
 {
 	//cout << "NovicePlayer::unserialize(string a)\n";
+	char career = a[0];
 	string namae;
 	int i = 2;//跳過角色代號
 	while (a[i] != ',')
@@ -373,7 +375,8 @@ NovicePlayer * NovicePlayer::unserialize(string a)
 	}
 	
 	//cout << lv << endl << h << endl << m << endl << ex << endl << mon;
-	NovicePlayer *p = new NovicePlayer();
+	//NovicePlayer *p = new NovicePlayer();
+	NovicePlayer* p = PlayerFactory::createPlayer(career);
 	p->setName(namae);
 	p->setLevel(lv);
 	p->setHp(h);

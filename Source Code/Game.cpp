@@ -73,33 +73,28 @@ void Game::run()
 			{
 				if (i == 0)
 				{
-					NovicePlayer p11;
 					CurrentPlayer++;
-					Playlist[0] = p11.unserialize(line);
+					Playlist[0] = NovicePlayer::unserialize(line);
 				}
 				if (i == 1)
 				{
-					NovicePlayer p22;
 					CurrentPlayer++;
-					Playlist[1] = p22.unserialize(line);
+					Playlist[1] = NovicePlayer::unserialize(line);
 				}
 				if (i == 2)
 				{
-					MagicianPlayer p33;
 					CurrentPlayer++;
-					Playlist[2] = p33.unserialize(line);
+					Playlist[2] = NovicePlayer::unserialize(line);
 				}
 				if (i == 3)
 				{
-					KnightPlayer p44;
 					CurrentPlayer++;
-					Playlist[3] = p44.unserialize(line);
+					Playlist[3] = NovicePlayer::unserialize(line);
 				}
 				if (i == 4)
 				{
-					KnightPlayer p55;
 					CurrentPlayer++;
-					Playlist[4] = p55.unserialize(line);
+					Playlist[4] = NovicePlayer::unserialize(line);
 				}
 			}
 		}
