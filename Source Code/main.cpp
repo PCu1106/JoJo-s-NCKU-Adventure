@@ -36,6 +36,7 @@ void whosbackpack(NovicePlayer**,int);
 void backpack(NovicePlayer*);
 int main()
 {
+	cout << "RPG START!\n";
 	Game rpg;
 	rpg.run();
 	
@@ -51,12 +52,12 @@ int main()
 	read >> col;
 	read >> trash;
 	read >> row;
-	map = new int *[row];//«Å§i¦æ¤j¤p
+	map = new int *[row];//ï¿½Å§iï¿½ï¿½jï¿½p
 	for (int x = 0; x < row; x++)
 	{
-		map[x] = new int[col];//«Å§i¦C¤j¤p
+		map[x] = new int[col];//ï¿½Å§iï¿½Cï¿½jï¿½p
 	}
-	for (int i = 0; i < row; i++)//±Ndatas¤¤ªº°g®cÅª¶imap
+	for (int i = 0; i < row; i++)//ï¿½Ndatasï¿½ï¿½ï¿½ï¿½ï¿½gï¿½cÅªï¿½imap
 	{
 		for (int j = 0; j < col; j++)
 		{
