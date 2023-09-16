@@ -36,7 +36,6 @@ void whosbackpack(NovicePlayer**,int);
 void backpack(NovicePlayer*);
 int main()
 {
-	cout << "RPG START!\n";
 	Game rpg;
 	rpg.run();
 	
