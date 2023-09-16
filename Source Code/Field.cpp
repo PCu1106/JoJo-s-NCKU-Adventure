@@ -54,14 +54,15 @@ Field::Field(const char *filename, int x, int y, int w, int h)
 			}
 		}
 	}
-	/*for (int i = 0; i < getMapHeight(); i++)//將datas中的迷宮讀進map
-	{
-		for (int j = 0; j < getMapWidth(); j++)
-		{
-			cout << map_data[i][j]<<"\t";
-		}
-		cout << endl;
-	}*/
+	//for (int i = 0; i < getMapHeight(); i++)//將datas中的迷宮讀進map
+	//{
+	//	for (int j = 0; j < getMapWidth(); j++)
+	//	{
+	//		cout << map_data[i][j]<<"\t";
+	//	}
+	//	cout << endl;
+	//}
+	//system("pause");
 	setPosition(x, y);
 	setVisionSize(w, h);
 	map_name = filename;
