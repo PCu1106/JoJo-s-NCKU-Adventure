@@ -3,6 +3,7 @@ please go to this google cloud to download the bgm, and put the three bgm in the
 https://drive.google.com/drive/folders/1eQGyitk3MX4EjriQBa-rmZIbI9XRYSVu?usp=sharing
 
 **If you use Visual Studio, put all map file and bgm file in the same directory with .vcxproj**
+**Add all source code directories to "Properties --> VC++ Directories --> Include Directories"**
 
 It's a RPG game playing on terminal. Beat the monster and meet with Tainan local dishes.
 
